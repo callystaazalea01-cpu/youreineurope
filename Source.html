@@ -43,8 +43,15 @@
         h1 { 
             color: #ff69b4; 
             font-size: 24px; 
-            margin-bottom: 25px; 
+            margin-bottom: 5px; 
             text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 25px;
         }
 
         .source-section {
@@ -79,28 +86,41 @@
             color: #64748b;
         }
 
-        .source-section li span {
+        .source-section li span.label {
             font-weight: bold;
             color: #4a5568;
+        }
+
+        .source-section a {
+            color: #ff69b4;
+            text-decoration: underline;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .source-section a:hover {
+            color: #d97706;
         }
     </style>
 </head>
 <body>
     <div class="source-card">
-        <h1>Referensi </h1>
+        <h1>Referensi</h1>
+        <p class="subtitle"><i class="fas fa-hand-pointer"></i> Klik teks sumber di bawah untuk membuka tautan</p>
         
         <!-- Bagian Foto -->
         <div class="source-section">
             <h3><i class="fas fa-image"></i> Foto Destinasi</h3>
             <ul>
-                <li><span>Paris (Menara Eiffel):</span> Pinterest</li>
-                <li><span>London:</span> Pinterest</li>
-                <li><span>Salju Swiss:</span> Pinterest</li>
-                <li><span>Hallstatt:</span> Pinterest</li>
-                <li><span>Roma:</span> Pinterest</li>
-                <li><span>Vienna:</span> Pinterest</li>
-                <li><span>Riviera Coast :</span> Pinterest</li>
-                <li><span>Belanda :</span> Pinterest</li>
+                <li><span class="label">Paris (Menara Eiffel):</span> <a href="https://pin.it/2WtoM7R6D" target="_blank">Pinterest</a></li>
+                <li><span class="label">London:</span> <a href="https://pin.it/1lnEF4DM9" target="_blank">Link 1</a>, <a href="https://pin.it/nQT4wTk68" target="_blank">Link 2</a></li>
+                <li><span class="label">Salju Swiss:</span> <a href="https://pin.it/11q4HRZNF" target="_blank">Pinterest</a></li>
+                <li><span class="label">Hallstatt:</span> <a href="https://pin.it/5O3T1JTyH" target="_blank">Pinterest</a></li>
+                <li><span class="label">Roma:</span> <a href="https://pin.it/2g2MQY0er" target="_blank">Pinterest</a></li>
+                <li><span class="label">Vienna:</span> <a href="https://pin.it/1ADAv2Ea9" target="_blank">Pinterest</a></li>
+                <li><span class="label">Belanda:</span> <a href="https://pin.it/5v10RuQKz" target="_blank">Pinterest</a></li>
+                <li><span class="label">German:</span> <a href="https://pin.it/2CIJPgkkR" target="_blank">Pinterest</a></li>
+                <li><span class="label">Riviera Coast:</span> <a href="https://pin.it/25dqhPu0e" target="_blank">Pinterest</a></li>
             </ul>
         </div>
 
@@ -108,7 +128,7 @@
         <div class="source-section">
             <h3><i class="fas fa-video"></i> Video Latar Utama</h3>
             <ul>
-                <li><span>video2.mp4:</span> TikTok</li>
+                <li><span class="label">video2.mp4:</span> <a href="https://vt.tiktok.com/ZSpfjbAFV/" target="_blank">TikTok</a></li>
             </ul>
         </div>
 
@@ -116,8 +136,8 @@
         <div class="source-section">
             <h3><i class="fas fa-code"></i> Komponen Lain</h3>
             <ul>
-                <li><span>Ikon:</span> FontAwesome</li>
-                <li><span>Font:</span> Comic Sans MS</li>
+                <li><span class="label">Ikon:</span> FontAwesome</li>
+                <li><span class="label">Font:</span> Comic Sans MS</li>
             </ul>
         </div>
     </div>
